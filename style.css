@@ -366,14 +366,15 @@ nav a:hover {
 
 /* section skills */
 .galleries {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 30px;
   max-width: 900px;
   margin: 0 auto;
+  flex-wrap: wrap
 }
 
 .gallery-item {
+  flex: 1 1 10rem;
   position: relative;
   text-align: center;
   transition: all 0.3s ease;
@@ -770,13 +771,13 @@ footer .social-icons a {
 
 @keyframes background {
   0% {
-    background-color: var(--background-color);
+    background-color: #0f171c;
   }
   50% {
     background-color: #0f171c;
   }
   100% {
-    background-color: var(--background-color);
+    background-color: #0f171c;
   }
 }
 

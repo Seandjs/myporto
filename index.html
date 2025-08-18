@@ -1,453 +1,511 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dhefano Seandy N. - Web Developer and Pro Valorant Player"
+    />
+    <title>Dhefano's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link rel="icon" href="properties/D5.webp" type="image/x-icon" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta
-    name="description"
-    content="Dhefano Seandy N. - Web Developer and Pro Valorant Player" />
-  <title>Dhefano's Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-  <link rel="icon" href="properties/D5.png" type="image/x-icon" />
-</head>
-
-<body>
-  <audio id="backsound" autoplay loop style="display: none">
-    <source src="properties/Soft_and_Wet.mp3" type="audio/mp3" />
-  </audio>
-  <section class="home" id="home">
-    <div class="navbar">
-      <nav>
-        <a href="#home" data-left="13" data-width="85">Home</a>
-        <a href="#about-page" data-left="88" data-width="85">About</a>
-        <a href="#skills-page" data-left="167" data-width="70">Skills</a>
-        <a href="#project-page" data-left="238" data-width="90">Projects</a>
-        <a href="#achievement-page" data-left="323" data-width="125">Certificates</a>
-        <a href="#contact-page" data-left="444" data-width="95">Contact</a>
-        <span class="nav-indicator"></span>
-      </nav>
-      <div class="mobile-menu-btn">
-        <i class="fas fa-bars"></i>
-      </div>
-    </div>
-
-    <div class="header" data-aos="fade-up" data-aos-duration="1000">
-      <h1>Dhefano Seandy N.</h1>
-      <p class="profession">Web Developer | Pro Player Valorant</p>
-      <p class="email">fano01h@gmail.com</p>
-    </div>
-
-    <div class="background-elements">
-      <div class="circle small"></div>
-      <div class="circle medium"></div>
-      <div class="circle large"></div>
-      <div class="circle small1"></div>
-      <div class="circle medium1"></div>
-      <div class="circle large1"></div>
-      <div class="circle small2"></div>
-      <div class="circle medium2"></div>
-      <div class="circle large2"></div>
-    </div>
-
-    <div class="social-icons" data-aos="fade-up" data-aos-delay="300">
-      <a
-        href="https://github.com/Seandjs"
-        target="_blank"
-        aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
-      <a
-        href="https://www.instagram.com/sean_ddd/"
-        target="_blank"
-        aria-label="Instagram Profile"><i class="fab fa-instagram"></i></a>
-    </div>
-  </section>
-
-  <section class="about-page" id="about-page">
-    <div class="container">
-      <h1 data-aos="fade-down">About Me</h1>
-      <div class="about-content" data-aos="fade-up">
-        <div class="pfp">
-          <img
-            src="properties/pfp.jpg"
-            alt="Dhefano Seandy's Profile Picture"
-            height="200"
-            width="200" />
-        </div>
-        <div class="about-text">
-          <h2>Hola!</h2>
-          <h3><span>I'm Dhefano Seandy N.</span></h3>
-          <p>
-            I am a software engineering student at SMKN 1 Surabaya. I was born
-            on the 23rd of June 2009 in Surabaya. I'm passionate about web
-            development and competitive gaming.
-          </p>
+  <body>
+    <audio id="backsound" autoplay loop style="display: none">
+      <source src="properties/Soft_and_Wet.mp3" type="audio/mp3" />
+    </audio>
+    <section class="home" id="home">
+      <div class="navbar">
+        <nav>
+          <a href="#home" data-left="13" data-width="85">Home</a>
+          <a href="#about-page" data-left="88" data-width="85">About</a>
+          <a href="#skills-page" data-left="167" data-width="70">Skills</a>
+          <a href="#project-page" data-left="238" data-width="90">Projects</a>
+          <a href="#achievement-page" data-left="323" data-width="125"
+            >Certificates</a
+          >
+          <a href="#contact-page" data-left="444" data-width="95">Contact</a>
+          <span class="nav-indicator"></span>
+        </nav>
+        <div class="mobile-menu-btn" id="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section class="skills-page" id="skills-page">
-    <div class="container">
-      <div class="section-header" data-aos="fade-down">
-        <h1>Skills</h1>
+      <div class="header" data-aos="fade-up" data-aos-duration="1000">
+        <h1>Dhefano Seandy N.</h1>
+        <p class="profession">Web Developer | Pro Player Valorant</p>
+        <p class="email">fano01h@gmail.com</p>
       </div>
-      <div class="galleries" data-aos="fade-up" data-aos-delay="200">
-        <div class="gallery-item">
-          <img
-            src="properties/Htmllogo.png"
-            alt="HTML Logo"
-            data-tooltip="HTML (HyperText Markup Language) is a markup language used to create and structure web pages. HTML allows developers to define elements on a page, such as text, images, links, tables, forms, and multimedia." />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="properties/Csslogo.png"
-            alt="CSS Logo"
-            data-tooltip="CSS (Cascading Style Sheets) is a language used to style and layout web pages. With CSS, developers can control the appearance of HTML elements, including colors, fonts, sizes, positions, and animations." />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="properties/Cpplogo.jpg"
-            alt="C++ Logo"
-            data-tooltip="C++ is a high-level programming language that is both procedural and object-oriented, supporting generic programming. Developed by Bjarne Stroustrup in the early 1980s, it extends the C language with object-oriented features." />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="properties/Pythonlogo-Photoroom.png"
-            alt="Python Logo"
-            data-tooltip="Python is a high-level, general-purpose programming language known for its simplicity and readability. Created by Guido van Rossum in 1991, Python is widely used for various purposes, including web development, data science, artificial intelligence, automation, and more." />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="properties/Valorantlogo.png"
-            alt="Valorant Logo"
-            data-tooltip="Adobe Valorant is a team-based first-person shooter (FPS) developed and published by Riot Games. Officially released on June 2, 2020, the game combines tactical elements like Counter-Strike with unique character abilities, similar to Overwatch." />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="properties/Figmalogo.png"
-            alt="Figma Logo"
-            data-tooltip="Figma is a cloud-based design and prototyping tool that allows users to create user interfaces (UI) like websites and apps, and collaborate in real-time on a single file." />
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="project-page" id="project-page">
-    <div class="container">
-      <h1 data-aos="fade-down">Projects</h1>
-      <div class="project-grid" data-aos="fade-up" data-aos-delay="200">
-        <div class="project-card">
-          <a
-            href="https://scratch.mit.edu/projects/1119146146"
-            target="_blank">
+      <div class="background-elements">
+        <div class="circle small"></div>
+        <div class="circle medium"></div>
+        <div class="circle large"></div>
+        <div class="circle small1"></div>
+        <div class="circle medium1"></div>
+        <div class="circle large1"></div>
+        <div class="circle small2"></div>
+        <div class="circle medium2"></div>
+        <div class="circle large2"></div>
+      </div>
+
+      <div class="social-icons" data-aos="fade-up" data-aos-delay="300">
+        <a
+          href="https://github.com/Seandjs"
+          target="_blank"
+          aria-label="GitHub Profile"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/sean_ddd/"
+          target="_blank"
+          aria-label="Instagram Profile"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+    </section>
+
+    <section class="about-page" id="about-page">
+      <div class="container">
+        <h1 data-aos="fade-down">About Me</h1>
+        <div class="about-content" data-aos="fade-up">
+          <div class="pfp">
             <img
-              src="properties/Awaybackhomelogo.png"
-              alt="A Way Back Home - Scratch Project" />
-            <div class="overlay">A Way Back Home - Scratch Project</div>
-          </a>
+              src="properties/pfp.webp"
+              alt="Dhefano Seandy's Profile Picture"
+              height="200"
+              width="200"
+            />
+          </div>
+          <div class="about-text">
+            <h2>Hola!</h2>
+            <h3><span>I'm Dhefano Seandy N.</span></h3>
+            <p>
+              I am a software engineering student at SMKN 1 Surabaya. I was born
+              on the 23rd of June 2009 in Surabaya. I'm passionate about web
+              development and competitive gaming.
+            </p>
+          </div>
         </div>
-        <div class="project-card">
-          <a href="#" aria-label="Project example">
+      </div>
+    </section>
+
+    <section class="skills-page" id="skills-page">
+      <div class="container">
+        <div class="section-header" data-aos="fade-down">
+          <h1>Skills</h1>
+        </div>
+        <div class="galleries" data-aos="fade-up" data-aos-delay="200">
+          <div class="gallery-item">
             <img
-              src="properties/Screenshot 2025-02-17 091343.png"
-              alt="Project Screenshot" />
-            <div class="overlay">Portofolio Itself</div>
-          </a>
-        </div>
-        <div class="project-card">
-          <a
-            href="http://z4cwwgs0wc0g840c8oowkgk0.194.164.148.36.sslip.io/"
-            aria-label="Project example">
-            <img src="properties/Re-sumlogo.png" alt="Project Image" />
-            <div class="overlay">Re-Sum - Website Project</div>
-          </a>
-        </div>
-        <div class="project-card">
-          <a
-            href="https://chef-tian.itch.io/oceans-melody"
-            aria-label="Project example">
-            <img src="properties/oceansmelody.png" alt="Project Image" />
-            <div class="overlay">
-              Ocean's Melody - Game Development (Global Game Jam)
-            </div>
-          </a>
-        </div>
-        <div class="project-card">
-          <a
-            href="https://github.com/Seandjs/wrntGacur"
-            aria-label="Project example">
-            <img src="properties/wrntGacur.png" alt="Project Image" />
-            <div class="overlay">
-              wrntGacur - CRUD Website Project
-            </div>
-          </a>
+              src="properties/Htmllogo.webp"
+              alt="HTML Logo"
+              data-tooltip="HTML (HyperText Markup Language) is a markup language used to create and structure web pages. HTML allows developers to define elements on a page, such as text, images, links, tables, forms, and multimedia."
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="properties/Csslogo.webp"
+              alt="CSS Logo"
+              data-tooltip="CSS (Cascading Style Sheets) is a language used to style and layout web pages. With CSS, developers can control the appearance of HTML elements, including colors, fonts, sizes, positions, and animations."
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="properties/Cpplogo.webp"
+              alt="C++ Logo"
+              data-tooltip="C++ is a high-level programming language that is both procedural and object-oriented, supporting generic programming. Developed by Bjarne Stroustrup in the early 1980s, it extends the C language with object-oriented features."
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="properties/Pythonlogo-Photoroom.webp"
+              alt="Python Logo"
+              data-tooltip="Python is a high-level, general-purpose programming language known for its simplicity and readability. Created by Guido van Rossum in 1991, Python is widely used for various purposes, including web development, data science, artificial intelligence, automation, and more."
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="properties/Valorantlogo.webp"
+              alt="Valorant Logo"
+              data-tooltip="Adobe Valorant is a team-based first-person shooter (FPS) developed and published by Riot Games. Officially released on June 2, 2020, the game combines tactical elements like Counter-Strike with unique character abilities, similar to Overwatch."
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="properties/Figmalogo.webp"
+              alt="Figma Logo"
+              data-tooltip="Figma is a cloud-based design and prototyping tool that allows users to create user interfaces (UI) like websites and apps, and collaborate in real-time on a single file."
+            />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="achievement-page" id="achievement-page">
-    <div class="container">
-      <div class="section-header" data-aos="fade-down">
-        <h1>Certificates</h1>
+    <section class="project-page" id="project-page">
+      <div class="container">
+        <h1 data-aos="fade-down">Projects</h1>
+        <div class="project-grid" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-card">
+            <a
+              href="https://scratch.mit.edu/projects/1119146146"
+              target="_blank"
+            >
+              <img
+                src="properties/Awaybackhomelogo.webp"
+                alt="A Way Back Home - Scratch Project"
+              />
+              <div class="overlay">A Way Back Home - Scratch Project</div>
+            </a>
+          </div>
+          <div class="project-card">
+            <a href="#" aria-label="Project example">
+              <img
+                src="properties/Screenshot 2025-08-17 190108.webp"
+                alt="Project Screenshot"
+              />
+              <div class="overlay">Portofolio Itself</div>
+            </a>
+          </div>
+          <div class="project-card">
+            <a
+              href="http://z4cwwgs0wc0g840c8oowkgk0.194.164.148.36.sslip.io/"
+              aria-label="Project example"
+            >
+              <img src="properties/Re-sumlogo.webp" alt="Project Image" />
+              <div class="overlay">Re-Sum - Website Project</div>
+            </a>
+          </div>
+          <div class="project-card">
+            <a
+              href="https://chef-tian.itch.io/oceans-melody"
+              aria-label="Project example"
+            >
+              <img src="properties/oceansmelody.webp" alt="Project Image" />
+              <div class="overlay">
+                Ocean's Melody - Game Development (Global Game Jam)
+              </div>
+            </a>
+          </div>
+          <div class="project-card">
+            <a
+              href="https://github.com/Seandjs/wrntGacur"
+              aria-label="Project example"
+            >
+              <img src="properties/wrntGacur.webp" alt="Project Image" />
+              <div class="overlay">wrntGacur - CRUD Website Project</div>
+            </a>
+          </div>
+        </div>
       </div>
-      <div
-        class="certificate-gallery"
-        data-aos="fade-up"
-        data-aos-delay="200">
-        <div class="certificate-item">
-          <img
-            src="properties/Level1.jpg"
-            alt="Level 1 Certificate"
-            loading="lazy" />
-          <div class="certificate-overlay">Level 1 Certificate</div>
-        </div>
-        <div class="certificate-item">
-          <img
-            src="properties/Level2.jpg"
-            alt="Level 2 Certificate"
-            loading="lazy" />
-          <div class="certificate-overlay">Level 2 Certificate</div>
-        </div>
-        <div class="certificate-item">
-          <img
-            src="properties/LDKS.jpg"
-            alt="LDKS Certificate"
-            loading="lazy" />
-          <div class="certificate-overlay">LDKS Certificate</div>
-        </div>
-        <div class="certificate-item">
-          <img
-            src="properties/GGJ2025.jpg"
-            alt="GGJ 2025 Certificate"
-            loading="lazy" />
-          <div class="certificate-overlay">Global Game Jam 2025 Certificate</div>
-        </div>
-        <div class="certificate-item">
-          <img
-            src="properties/Cyberseccertificate.png"
-            alt="Cybersecurity Certificate"
-            loading="lazy" />
-          <div class="certificate-overlay">Cybersecurity Workshop Certificate</div>
-        </div><div class="certificate-item">
-          <img
-            src="properties/Hackpoint.png"
-            alt="Cybersecurity Certificate"
-            loading="lazy" />
-          <div class="certificate-overlay">Hackpoint Bootcamp Certificate</div>
-        </div>
-      </div>
-      <div class="decorative-elements">
-        <div class="shape square small"></div>
-        <div class="shape square medium"></div>
-        <div class="shape square large"></div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact-page">
-    <div class="container">
-      <div class="contact" data-aos="fade-up">
+    <section class="achievement-page" id="achievement-page">
+      <div class="container">
+        <div class="section-header" data-aos="fade-down">
+          <h1>Certificates</h1>
+        </div>
+        <div
+          class="certificate-gallery"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="certificate-item">
+            <img
+              src="properties/Level1.webp"
+              alt="Level 1 Certificate"
+              loading="lazy"
+            />
+            <div class="certificate-overlay">Level 1 Certificate</div>
+          </div>
+          <div class="certificate-item">
+            <img
+              src="properties/Level2.webp"
+              alt="Level 2 Certificate"
+              loading="lazy"
+            />
+            <div class="certificate-overlay">Level 2 Certificate</div>
+          </div>
+          <div class="certificate-item">
+            <img
+              src="properties/LDKS.webp"
+              alt="LDKS Certificate"
+              loading="lazy"
+            />
+            <div class="certificate-overlay">LDKS Certificate</div>
+          </div>
+          <div class="certificate-item">
+            <img
+              src="properties/GGJ2025.webp"
+              alt="GGJ 2025 Certificate"
+              loading="lazy"
+            />
+            <div class="certificate-overlay">
+              Global Game Jam 2025 Certificate
+            </div>
+          </div>
+          <div class="certificate-item">
+            <img
+              src="properties/Cyberseccertificate.webp"
+              alt="Cybersecurity Certificate"
+              loading="lazy"
+            />
+            <div class="certificate-overlay">
+              Cybersecurity Workshop Certificate
+            </div>
+          </div>
+          <div class="certificate-item">
+            <img
+              src="properties/Hackpoint.webp"
+              alt="Cybersecurity Certificate"
+              loading="lazy"
+            />
+            <div class="certificate-overlay">
+              Hackpoint Bootcamp Certificate
+            </div>
+          </div>
+        </div>
         <div class="decorative-elements">
-          <div class="shape triangle small"></div>
-          <div class="shape triangle medium"></div>
-          <div class="shape triangle large"></div>
-          <div class="shape triangle medium2"></div>
-          <div class="shape triangle medium3"></div>
-          <div class="shape triangle large2"></div>
-        </div>
-
-        <h2>Contact Me</h2>
-        <div class="contact-form">
-          <div id="alertBox" class="alert"></div>
-          <form id="contactForm" action="submit.php" method="POST" onsubmit="submitForm(event)">
-            <div class="form-group">
-              <input
-                type="text"
-                id="name"
-                name="name"
-                class="input"
-                placeholder="Your Name"
-                required />
-            </div>
-            <div class="form-group">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                class="input"
-                placeholder="Your Email"
-                required />
-            </div>
-            <div class="form-group">
-              <textarea
-                id="message"
-                name="message"
-                class="textarea"
-                placeholder="Your Message"
-                required></textarea>
-            </div>
-            <button type="submit" class="button">Send Message</button>
+          <div class="shape square small"></div>
+          <div class="shape square medium"></div>
+          <div class="shape square large"></div>
         </div>
       </div>
-  </section>
+    </section>
 
-  <div id="tooltip"></div>
+    <section id="contact-page">
+      <div class="container">
+        <div class="contact" data-aos="fade-up">
+          <div class="decorative-elements">
+            <div class="shape triangle small"></div>
+            <div class="shape triangle medium"></div>
+            <div class="shape triangle large"></div>
+            <div class="shape triangle medium2"></div>
+            <div class="shape triangle medium3"></div>
+            <div class="shape triangle large2"></div>
+          </div>
 
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <p>&copy; 2025 Dhefano Seandy N. Besok makan apa.</p>
-        <div class="social-icons">
-          <a href="https://github.com/Seandjs" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://www.instagram.com/sean_ddd/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <h2>Contact Me</h2>
+          <div class="contact-form">
+            <div id="alertBox" class="alert"></div>
+            <form
+              id="contactForm"
+              action="submit.php"
+              method="POST"
+              onsubmit="submitForm(event)"
+            >
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="input"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="input"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  class="textarea"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="button">Send Message</button>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    // Initialize AOS animation library
-    document.addEventListener("DOMContentLoaded", function() {
-      AOS.init({
-        duration: 800,
-        easing: "ease-in-out",
-        once: true,
-      });
+    <div id="tooltip"></div>
 
-      // Navigation active state handler
-      const links = document.querySelectorAll("nav a");
-      const span = document.querySelector("nav span");
-      const sections = document.querySelectorAll("section");
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 Dhefano Seandy N. Andai.</p>
+          <div class="social-icons">
+            <a href="https://github.com/Seandjs" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://www.instagram.com/sean_ddd/" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-      function updateSpanPosition() {
-        let currentSection = "";
-        const scrollPosition = window.scrollY + window.innerHeight / 2;
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      // Initialize AOS animation library
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init({
+          duration: 800,
+          easing: "ease-in-out",
+          once: true,
+        });
 
-        sections.forEach((section) => {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.offsetHeight;
+        // Navigation active state handler
+        const links = document.querySelectorAll("nav a");
+        const span = document.querySelector("nav span");
+        const sections = document.querySelectorAll("section");
 
-          if (
-            scrollPosition >= sectionTop &&
-            scrollPosition < sectionTop + sectionHeight
-          ) {
-            currentSection = section.getAttribute("id");
+        function updateSpanPosition() {
+          let currentSection = "";
+          const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+
+            if (
+              scrollPosition >= sectionTop &&
+              scrollPosition < sectionTop + sectionHeight
+            ) {
+              currentSection = section.getAttribute("id");
+            }
+          });
+
+          links.forEach((link) => {
+            if (link.getAttribute("href") === `#${currentSection}`) {
+              const left = link.getAttribute("data-left");
+              const width = link.getAttribute("data-width");
+              span.style.left = `${left}px`;
+              span.style.width = `${width}px`;
+            }
+          });
+        }
+
+        // Mobile menu toggle
+        const menuBtn = document.querySelector(".mobile-menu-btn");
+        const nav = document.querySelector("nav");
+
+        if (menuBtn) {
+          menuBtn.addEventListener("click", function () {
+            nav.classList.toggle("active");
+            this.querySelector("i").classList.toggle("fa-bars");
+            this.querySelector("i").classList.toggle("fa-times");
+          });
+        }
+
+        const menu = document.querySelector(".mobile-menu-btn");
+
+        document.addEventListener("click", function (e) {
+          if (!menu.contains(e.target) && !nav.contains(e.target)) {
+            nav.classList.remove("active");
           }
         });
 
-        links.forEach((link) => {
-          if (link.getAttribute("href") === `#${currentSection}`) {
-            const left = link.getAttribute("data-left");
-            const width = link.getAttribute("data-width");
-            span.style.left = `${left}px`;
-            span.style.width = `${width}px`;
-          }
-        });
-      }
+        // Tooltip functionality
+        const tooltipElement = document.getElementById("tooltip");
+        const skillImages = document.querySelectorAll(".gallery-item img");
 
-      // Mobile menu toggle
-      const menuBtn = document.querySelector(".mobile-menu-btn");
-      const nav = document.querySelector("nav");
+        skillImages.forEach((image) => {
+          image.addEventListener("mousemove", (e) => {
+            const tooltipText = image.getAttribute("data-tooltip");
+            tooltipElement.textContent = tooltipText;
 
-      if (menuBtn) {
-        menuBtn.addEventListener("click", function() {
-          nav.classList.toggle("active");
-          this.querySelector("i").classList.toggle("fa-bars");
-          this.querySelector("i").classList.toggle("fa-times");
-        });
-      }
+            const tooltipX = e.pageX + 15;
+            const tooltipY = e.pageY + 15;
 
-      // Tooltip functionality
-      const tooltipElement = document.getElementById("tooltip");
-      const skillImages = document.querySelectorAll(".gallery-item img");
+            tooltipElement.style.left = `${tooltipX}px`;
+            tooltipElement.style.top = `${tooltipY}px`;
+            tooltipElement.style.visibility = "visible";
+            tooltipElement.style.opacity = 1;
+          });
 
-      skillImages.forEach((image) => {
-        image.addEventListener("mousemove", (e) => {
-          const tooltipText = image.getAttribute("data-tooltip");
-          tooltipElement.textContent = tooltipText;
-
-          const tooltipX = e.pageX + 15;
-          const tooltipY = e.pageY + 15;
-
-          tooltipElement.style.left = `${tooltipX}px`;
-          tooltipElement.style.top = `${tooltipY}px`;
-          tooltipElement.style.visibility = "visible";
-          tooltipElement.style.opacity = 1;
+          image.addEventListener("mouseleave", () => {
+            tooltipElement.style.visibility = "hidden";
+            tooltipElement.style.opacity = 0;
+          });
         });
 
-        image.addEventListener("mouseleave", () => {
-          tooltipElement.style.visibility = "hidden";
-          tooltipElement.style.opacity = 0;
-        });
+        document
+          .getElementById("contactForm")
+          .addEventListener("submit", function (event) {
+            // Prevent the default form submission
+            event.preventDefault();
+
+            // Get the form data
+            var formData = new FormData(this);
+
+            // Create and configure the XMLHttpRequest object
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "submit.php", true);
+
+            // Set up the response handler
+            xhr.onload = function () {
+              var alertBox = document.getElementById("alertBox");
+
+              if (xhr.status === 200) {
+                // Success response
+                alertBox.textContent = xhr.responseText;
+                alertBox.style.display = "block";
+                document.getElementById("contactForm").reset();
+              } else {
+                // Error response
+                alertBox.textContent = "Error mas: " + xhr.statusText;
+                alertBox.style.display = "block";
+              }
+
+              // Hide the message after 5 seconds
+              setTimeout(function () {
+                alertBox.style.display = "none";
+              }, 5000);
+            };
+
+            // Handle network errors
+            xhr.onerror = function () {
+              var alertBox = document.getElementById("alertBox");
+              alertBox.textContent =
+                "Network error occurred. Please try again.";
+              alertBox.style.display = "block";
+            };
+
+            // Send the form data
+            xhr.send(formData);
+          });
+
+        // Call functions on load and scroll
+        window.addEventListener("scroll", updateSpanPosition);
+        updateSpanPosition();
+
+        // Ambil elemen audio
+        const audio = document.getElementById("backsound");
+
+        // Atur volume utama menjadi 50% (nilai antara 0 dan 1)
+        audio.volume = 1;
       });
-
-      document.getElementById('contactForm').addEventListener('submit', function(event) {
-        // Prevent the default form submission
-        event.preventDefault();
-
-        // Get the form data
-        var formData = new FormData(this);
-
-        // Create and configure the XMLHttpRequest object
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', 'submit.php', true);
-
-        // Set up the response handler
-        xhr.onload = function() {
-          var alertBox = document.getElementById('alertBox');
-
-          if (xhr.status === 200) {
-            // Success response
-            alertBox.textContent = xhr.responseText;
-            alertBox.style.display = 'block';
-            document.getElementById('contactForm').reset();
-          } else {
-            // Error response
-            alertBox.textContent = 'Error mas: ' + xhr.statusText;
-            alertBox.style.display = 'block';
-          }
-
-          // Hide the message after 5 seconds
-          setTimeout(function() {
-            alertBox.style.display = 'none';
-          }, 5000);
-        };
-
-        // Handle network errors
-        xhr.onerror = function() {
-          var alertBox = document.getElementById('alertBox');
-          alertBox.textContent = 'Network error occurred. Please try again.';
-          alertBox.style.display = 'block';
-        };
-
-        // Send the form data
-        xhr.send(formData);
-      });
-
-      // Call functions on load and scroll
-      window.addEventListener("scroll", updateSpanPosition);
-      updateSpanPosition();
-
-      // Ambil elemen audio
-      const audio = document.getElementById("backsound");
-
-      // Atur volume utama menjadi 50% (nilai antara 0 dan 1)
-      audio.volume = 1;
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
