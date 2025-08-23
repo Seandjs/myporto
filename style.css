@@ -100,7 +100,6 @@ section:nth-child(odd) {
 }
 
 nav {
-  background-color: rgba(27, 38, 44, 0.8);
   backdrop-filter: blur(10px);
   border-radius: 50px;
   padding: 10px 20px;
@@ -169,24 +168,21 @@ nav a:hover {
   font-size: 3.5rem;
   margin-bottom: 0.5rem;
   color: var(--text-color);
-  animation: naikturunnaikturun 2s infinite ease-in-out,
-    goyangkekanan 1s ease-in-out;
+  animation: naikturunnaikturun 2s infinite ease-in-out;
 }
 
 .header .profession {
   font-size: 1.5rem;
   color: var(--primary-color);
   margin-bottom: 1rem;
-  animation: naikturunnaikturun 2s infinite ease-in-out,
-    goyangkekiri 1s ease-in-out;
+  animation: naikturunnaikturun 2s infinite ease-in-out;
   filter: drop-shadow(0 0 8px rgba(187, 225, 250, 0.6));
 }
 
 .header .email {
-  font-size: 1rem;
+  font-size: 0.82rem;
   color: #9a9a9a;
-  animation: naikturunnaikturun 2s infinite ease-in-out,
-    goyangkekiri 1.2s ease-in-out;
+  animation: naikturunnaikturun 2s infinite ease-in-out;
 }
 
 /* elemen background */
@@ -295,7 +291,7 @@ nav a:hover {
 }
 
 .social-icons a {
-  font-size: 2rem;
+  font-size: 2.16rem;
   color: var(--text-color);
   margin: 0 15px;
   transition: all 0.3s ease;
@@ -370,7 +366,7 @@ nav a:hover {
   gap: 30px;
   max-width: 900px;
   margin: 0 auto;
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
 
 .gallery-item {
@@ -417,7 +413,7 @@ nav a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 30px;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -592,7 +588,7 @@ nav a:hover {
 
 .shape.triangle.large2 {
   bottom: 40%;
-  left: 5%;
+  left: 2%;
 }
 
 /* section kontak */
@@ -690,7 +686,6 @@ button.button:active {
 /* footer */
 footer {
   background-color: var(--background);
-  padding: 5px 0;
   text-align: center;
 }
 
@@ -698,7 +693,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
 }
 
 footer p {
@@ -713,6 +707,66 @@ footer .social-icons {
 footer .social-icons a {
   font-size: 1.5rem;
   margin: 0 10px;
+}
+
+.background-elements-img .img1 {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 230px;
+  height: auto;
+  opacity: 0.35;
+  filter: drop-shadow(0 0 10px rgba(187, 225, 250, 0.5));
+  animation: ngambang 6s infinite alternate ease-in-out;
+  rotate: 45deg;
+}
+
+.background-elements-img .img2 {
+  position: absolute;
+  top: 57%;
+  left: 83%;
+  width: 88px;
+  height: auto;
+  opacity: 0.3;
+  filter: drop-shadow(0 0 10px rgba(187, 225, 250, 0.5));
+  animation: ngambang 7s infinite alternate ease-in-out;
+  rotate: -15deg;
+}
+
+.background-elements-img .img3 {
+  position: absolute;
+  top: 86%;
+  left: 12%;
+  width: 142px;
+  height: auto;
+  opacity: 0.4;
+  filter: drop-shadow(0 0 10px rgba(187, 225, 250, 0.5));
+  animation: ngambang 5s infinite alternate ease-in-out;
+  rotate: 7deg;
+}
+
+.background-elements-img .img4 {
+  position: absolute;
+  top: 4.5%;
+  left: 8%;
+  width: 323px;
+  height: auto;
+  opacity: 0.4;
+  filter: drop-shadow(0 0 10px rgba(187, 225, 250, 0.5));
+  animation: gemetar 1.9s infinite alternate ease-in-out;
+  rotate: 27deg;
+}
+
+.background-elements-img .img5 {
+  position: absolute;
+  top: 6%;
+  left: 80%;
+  width: 200px;
+  height: auto;
+  opacity: 0.4;
+  filter: drop-shadow(0 0 10px rgba(187, 225, 250, 0.5));
+  animation: gemetar 1.3s infinite alternate ease-in-out;
+  rotate: -12deg;
 }
 
 @keyframes ngambang {
@@ -790,6 +844,20 @@ footer .social-icons a {
   }
 }
 
+@keyframes gemetar {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25%,
+  75% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+}
+
 @media (max-width: 992px) {
   .about-content {
     flex-direction: column;
@@ -853,6 +921,12 @@ footer .social-icons a {
 
   .mobile-menu-btn {
     display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
   }
 
   .galleries {
@@ -862,6 +936,66 @@ footer .social-icons a {
   .project-grid,
   .certificate-gallery {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .background-elements-img .img1 {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 161px;
+    height: auto;
+    opacity: 0.35;
+    filter: drop-shadow(0 0 10px rgba(187, 225, 250, 0.5));
+    animation: ngambang 6s infinite alternate ease-in-out;
+    rotate: 45deg;
+  }
+
+  .background-elements-img .img2 {
+    position: absolute;
+    top: 57%;
+    left: 83%;
+    width: 62px;
+    height: auto;
+    opacity: 0.3;
+    filter: drop-shadow(0 0 10px rgba(187, 225, 250, 0.5));
+    animation: ngambang 7s infinite alternate ease-in-out;
+    rotate: -15deg;
+  }
+
+  .background-elements-img .img3 {
+    position: absolute;
+    top: 86%;
+    left: 12%;
+    width: 100px;
+    height: auto;
+    opacity: 0.4;
+    filter: drop-shadow(0 0 10px rgba(187, 225, 250, 0.5));
+    animation: ngambang 5s infinite alternate ease-in-out;
+    rotate: 7deg;
+  }
+
+  .background-elements-img .img4 {
+    position: absolute;
+    top: 5.6%;
+    left: 7%;
+    width: 187px;
+    height: auto;
+    opacity: 0.4;
+    filter: drop-shadow(0 0 10px rgba(187, 225, 250, 0.5));
+    animation: gemetar 1.9s infinite alternate ease-in-out;
+    rotate: 27deg;
+  }
+
+  .background-elements-img .img5 {
+    position: absolute;
+    top: 5.6%;
+    left: 70%;
+    width: 116px;
+    height: auto;
+    opacity: 0.4;
+    filter: drop-shadow(0 0 10px rgba(187, 225, 250, 0.5));
+    animation: gemetar 1.3s infinite alternate ease-in-out;
+    rotate: -12deg;
   }
 }
 
